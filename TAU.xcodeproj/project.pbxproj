@@ -90,7 +90,6 @@
 				008A39E12C64196C003D12C9 /* Steps */,
 				008A39E02C64195D003D12C9 /* XCUIElements */,
 				008A39DF2C641946003D12C9 /* Base */,
-				00782DA22C45DA76003BD8AF /* TAUUITestsLaunchTests.swift */,
 			);
 			path = TAUUITests;
 			sourceTree = "<group>";
@@ -124,6 +123,7 @@
 			children = (
 				00782DA02C45DA76003BD8AF /* TAUUITests.swift */,
 				00782DAD2C475EF5003BD8AF /* BDDTest.swift */,
+				00782DA22C45DA76003BD8AF /* TAUUITestsLaunchTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
