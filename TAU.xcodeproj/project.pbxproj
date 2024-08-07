@@ -11,6 +11,8 @@
 		00782DA32C45DA76003BD8AF /* TAUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00782DA22C45DA76003BD8AF /* TAUUITestsLaunchTests.swift */; };
 		00782DAA2C46DA07003BD8AF /* TAUUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00782DA92C46DA07003BD8AF /* TAUUITestBase.swift */; };
 		00782DAE2C475EF5003BD8AF /* BDDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00782DAD2C475EF5003BD8AF /* BDDTest.swift */; };
+		008A39DC2C641870003D12C9 /* TAUSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A39DB2C641870003D12C9 /* TAUSteps.swift */; };
+		008A39DE2C641892003D12C9 /* TAUElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A39DD2C641892003D12C9 /* TAUElements.swift */; };
 		9B5BC70E220F55C20047CFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */; };
 		9B5BC710220F55C20047CFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70F220F55C20047CFA4 /* ViewController.swift */; };
 		9B5BC713220F55C20047CFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC711220F55C20047CFA4 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		00782DA22C45DA76003BD8AF /* TAUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		00782DA92C46DA07003BD8AF /* TAUUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestBase.swift; sourceTree = "<group>"; };
 		00782DAD2C475EF5003BD8AF /* BDDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDTest.swift; sourceTree = "<group>"; };
+		008A39DB2C641870003D12C9 /* TAUSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUSteps.swift; sourceTree = "<group>"; };
+		008A39DD2C641892003D12C9 /* TAUElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUElements.swift; sourceTree = "<group>"; };
 		9B5BC70A220F55C20047CFA4 /* TAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BC70F220F55C20047CFA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,12 +86,46 @@
 		00782D9F2C45DA76003BD8AF /* TAUUITests */ = {
 			isa = PBXGroup;
 			children = (
-				00782DA02C45DA76003BD8AF /* TAUUITests.swift */,
+				008A39E22C641978003D12C9 /* Tests */,
+				008A39E12C64196C003D12C9 /* Steps */,
+				008A39E02C64195D003D12C9 /* XCUIElements */,
+				008A39DF2C641946003D12C9 /* Base */,
 				00782DA22C45DA76003BD8AF /* TAUUITestsLaunchTests.swift */,
-				00782DA92C46DA07003BD8AF /* TAUUITestBase.swift */,
-				00782DAD2C475EF5003BD8AF /* BDDTest.swift */,
 			);
 			path = TAUUITests;
+			sourceTree = "<group>";
+		};
+		008A39DF2C641946003D12C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				00782DA92C46DA07003BD8AF /* TAUUITestBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		008A39E02C64195D003D12C9 /* XCUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				008A39DD2C641892003D12C9 /* TAUElements.swift */,
+			);
+			path = XCUIElements;
+			sourceTree = "<group>";
+		};
+		008A39E12C64196C003D12C9 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				008A39DB2C641870003D12C9 /* TAUSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		008A39E22C641978003D12C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00782DA02C45DA76003BD8AF /* TAUUITests.swift */,
+				00782DAD2C475EF5003BD8AF /* BDDTest.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		9B5BC701220F55C20047CFA4 = {
@@ -265,8 +303,10 @@
 			files = (
 				00782DA12C45DA76003BD8AF /* TAUUITests.swift in Sources */,
 				00782DAA2C46DA07003BD8AF /* TAUUITestBase.swift in Sources */,
+				008A39DC2C641870003D12C9 /* TAUSteps.swift in Sources */,
 				00782DAE2C475EF5003BD8AF /* BDDTest.swift in Sources */,
 				00782DA32C45DA76003BD8AF /* TAUUITestsLaunchTests.swift in Sources */,
+				008A39DE2C641892003D12C9 /* TAUElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
